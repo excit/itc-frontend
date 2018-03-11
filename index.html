@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+</head>
+
+<body>
+
+  <p>Начало документа...</p>
+  <script>
+
+  
+// задание 1 
+
+     function plus(){
+      let result = 0;
+      for (let i = 0; i< arguments.length; i++){
+        result += arguments[i];
+      }
+      return result;
+    }
+   console.log(plus(2, 3, 5, 7, 3));
+
+  
+
+  // задание 2 
+
+    function multiply(a,b){
+      let sum = 0 
+      for (var i = 0; i < b; i++) {
+      sum += (sum, a);
+      }
+      return sum;
+    }
+    console.log(multiply(3,10));
+   
+
+    // задание 3
+
+    function mergeArrays(arr1, arr2, arrall){
+var arr1 = [1,2,3];
+var arr2 = [4, 5];
+var arrall = arr1.concat(arr2);
+return(arrall)
+}
+console.log(mergeArrays([1,2,3], [4, 5] ))
+
+
+//задание 4
+
+     const arra = [{"name":"Антон", "sex":"мужской", "fav movie":"Элизиум"},
+  {"name":"Сара", "sex":"женский", "fav movie":"12 лет рабства"},
+  {"name":"Роберт", "sex":"мужской", "fav movie":"Левиафан"},
+{"name":"Розалия", "sex":"женский", "fav movie":"Красотка"}];
+  const people = arra.filter(arra => arra.sex == "женский");
+    console.log(people);
+
+// задание 5
+
+    function getQuadrant (x,y){
+      if ((x < 0) && (y < 0)) { return('3 четверть');
+      }
+     else if ((x > 0) && (y > 0)) { return('1 четверть');
+      }
+      else if  ((x < 0) && (y > 0)) { return('2 четверть');
+      }
+      else if ((x > 0) && (y < 0))  { return('4 четверть');
+      }
+      else if (((x == 0) && (y > 0)) || ((x == 0) && (y > 0))) { return('ось OY');
+      } 
+      else if (((x > 0) && (y == 0)) || ((x < 0) && (y == 0))) { return('ось OX');
+      }
+      else { return('начало координат');
+      }
+      
+    }
+    console.log(getQuadrant(1,2));
+    console.log(getQuadrant(-1,2));
+    console.log(getQuadrant(-2,-3));
+    console.log(getQuadrant(4,-7));
+    console.log(getQuadrant(0,0));
+
+
+
+  </script>
+
+  <p>...Конец документа</p>
+
+</body>
+
+</html>
